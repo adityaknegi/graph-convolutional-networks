@@ -31,7 +31,7 @@ optional arguments:
 
 Example:
 ```bash
-  python3 src/train.py --dataset ../cora/ my_seed 10
+  python3 src/train.py --dataset ../cora/ SEED 10
 ```
 
 
