@@ -56,6 +56,6 @@ def get_graph(edges: typing.List[typing.Set]):
 def accuracy(pred, labels):
     """ accuracy calculation """
     preds = pred.max(1)[1].type_as(labels)
-    actual = preds.eq(labels).double()
-    actual = actual.sum()
-    return actual / len(labels)
+    preds = preds.eq(labels).double()
+    preds = preds.sum()
+    return preds / len(labels)
