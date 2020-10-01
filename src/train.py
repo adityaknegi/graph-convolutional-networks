@@ -121,6 +121,7 @@ if __name__ == "__main__":
     plt.show()
     plt.close()
 
+    plt.figure(figsize=(10, 6))
     plt.plot(train_lost,'b')
     plt.plot(val_lost,'r')
     plt.title("train and val loss")
